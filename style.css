@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+
+/* variables */
+:root {
+  --body-clr: #212529;
+}
+
+/* reset */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+body {
+  font-size: 1rem;
+  line-height: 1.5;
+  font-family: "Open Sans", sans-serif;
+  background-color: var(--body-clr);
+  color: white;
+}
+
+header {
+  background-color: #6e2cf4;
+}
+
+.converter-section {
+  margin: 4rem 0;
+}
+
+.converter-box {
+  padding: 2rem 1.5rem;
+  border-radius: 0.5rem;
+
+  h2 {
+    margin-bottom: 1rem;
+  }
+
+  .input-label {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+
+  .output {
+    line-height: 2;
+    margin: 1rem 0;
+    span > span {
+      word-wrap: break-word;
+    }
+  }
+  .output-label {
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+  .output-num {
+    display: block;
+  }
+}
+
+.binary {
+  background-color: #0063db;
+}
+.octal {
+  background-color: #05be78;
+}
+.decimal {
+  background-color: #b87ddb;
+}
+.hexadecimal {
+  background-color: #cc5c46;
+}
+
+@media (max-width: 576px) {
+  .converter-box {
+    margin: 0 1rem;
+  }
+}

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Number System</title>
+    <link rel="stylesheet" href="./vendor/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="text-center">
+          <h1 class="text-white py-3">Converter</h1>
+        </div>
+      </div>
+    </header>
+    <div class="converter-section">
+      <div class="container">
+        <div class="row row-gap-4">
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="binary converter-box">
+              <h2>Binary</h2>
+              <form action="" id="binaryConvertForm">
+                <label for="binary-input" class="form-label input-label"
+                  >Input</label
+                >
+                <input
+                  type="number"
+                  name="data"
+                  class="form-control"
+                  id="binary-input"
+                  step="0.00001"
+                />
+                <div class="output">
+                  <span class="output-label">Output</span>
+                  <span class="output-num"
+                    >Octal: <span class="output-octal-value">0.0</span></span
+                  >
+                  <span class="output-num"
+                    >Decimal:
+                    <span class="output-decimal-value">0.0</span></span
+                  >
+                  <span class="output-num"
+                    >Hexadecimal:
+                    <span class="output-hexadecimal-value">0.0</span></span
+                  >
+                </div>
+                <div class="flex align-items-center gap-4">
+                  <button type="submit" class="btn btn-warning">Convert</button>
+                  <button id="binary-clear" class="btn btn-warning">
+                    Clear
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="octal converter-box">
+              <h2>Octal</h2>
+              <form action="" id="octalConvertForm">
+                <label for="octal-input" class="form-label input-label"
+                  >Input</label
+                >
+                <input
+                  type="number"
+                  class="form-control"
+                  step="0.00001"
+                  id="octal-input"
+                  name="data"
+                />
+                <div class="output">
+                  <span class="output-label">Output</span>
+                  <span class="output-num"
+                    >Binary: <span class="output-binary-value">0.0</span></span
+                  >
+                  <span class="output-num"
+                    >Decimal:
+                    <span class="output-decimal-value">0.0</span></span
+                  >
+                  <span class="output-num"
+                    >Hexadecimal:
+                    <span class="output-hexadecimal-value">0.0</span></span
+                  >
+                </div>
+                <div class="flex align-items-center gap-4">
+                  <button type="submit" class="btn btn-danger">Convert</button>
+                  <button id="octal-clear" class="btn btn-danger">Clear</button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="decimal converter-box">
+              <h2>Decimal</h2>
+              <form action="" id="decimalConvertForm">
+                <label for="decimal-input" class="form-label input-label"
+                  >Input</label
+                >
+                <input
+                  type="number"
+                  step="0.00001"
+                  class="form-control"
+                  id="decimal-input"
+                  name="data"
+                />
+                <div class="output">
+                  <span class="output-label">Output</span>
+                  <span class="output-num"
+                    >Binary: <span class="output-binary-value">0.0</span></span
+                  >
+                  <span class="output-num"
+                    >Octal: <span class="output-octal-value">0.0</span></span
+                  >
+                  <span class="output-num"
+                    >Hexadecimal:
+                    <span class="output-hexadecimal-value">0.0</span></span
+                  >
+                </div>
+                <div class="flex align-items-center gap-4">
+                  <button type="submit" class="btn btn-success">Convert</button>
+                  <button id="decimal-clear" class="btn btn-success">
+                    Clear
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="hexadecimal converter-box">
+              <h2>Hexadecimal</h2>
+              <form action="" id="hexadecimalConvertForm">
+                <label for="hexadecimal-input" class="form-label input-label"
+                  >Input</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="hexadecimal-input"
+                  name="data"
+                />
+                <div class="output">
+                  <span class="output-label">Output</span>
+                  <span class="output-num"
+                    >Binary: <span class="output-binary-value">0.0</span></span
+                  >
+                  <span class="output-num"
+                    >Octal: <span class="output-octal-value">0.0</span></span
+                  >
+                  <span class="output-num"
+                    >Decimal:
+                    <span class="output-decimal-value">0.0</span></span
+                  >
+                </div>
+                <div class="flex align-items-center gap-4">
+                  <button type="submit" class="btn btn-primary">Convert</button>
+                  <button id="hexadecimal-clear" class="btn btn-primary">
+                    Clear
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="./main.js"></script>
+    <script src="./vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
